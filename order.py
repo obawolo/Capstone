@@ -35,7 +35,7 @@ def create_order(symbol, qty, side, type, time_in_force):
     return json.loads(r.content)
 
 
-response = create_order("SPY", 100, "sell", "market", "gtc")
+response = create_order("SPY", 100, "buy", "market", "gtc")
 #                                   "sell"
 
 print(response)
